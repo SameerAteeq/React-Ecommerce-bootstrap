@@ -1,13 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700;1,900&family=Signika:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ background-color: #ecf0f3;
+ font-family: 'Ubuntu', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.text-white{
+color: #ffff;
+}
+
+/* theme dark */
+.bg-black{
+    background-color: black;
+  }
+  .bg-light-black{
+    background-color: #262626 !important;
+  }
+  .text-black{
+    color: black;
+  }
+  .text-light-black{
+    color: #262626;
+  }
+  .bg-dark-primary{
+    background-color: #fcbc73 !important;
+  }
+  .text-dark-primary{
+    color: #fcbc73 !important;
+  }
+  
+  /* theme light */
+  .bg-light{
+    background-color: white;
+  }
+  .bg-light-2{
+    background-color: #dadcde;
+  }
+  .bg-light-primary{
+    background-color: #263c97 !important;
+  }
+  .text-light-primary{
+    color: #263c97 !important;
+  }
+  .react-tel-input input{
+    width: 100% !important;
+  }
+
+/* home Stylying */
+
+.home-bg{
+  background-color: #263c97
+}
+.bg-span{
+  background-color:#fcbe00 ;
+  color: #333;
+  padding: 5;
+  font-size: 18;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.home-btn{
+  padding: 12px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: #ffff;
+  color: #4444;
+  font-weight: 500;
+}
+/* Footer Stylying */
+.icons{
+  width: 32px;
+ height: 32px;
+ border-radius: 4px;
+ padding: 4px;
+ cursor: pointer;
+}
+.fb{
+ background-color: #3c5b9b;
+ 
+}
+.yt{
+  background-color:#ff0e00;
+}
+.twitter{
+  background: #40c1df
+}
+.stack{
+  background: #20c997
+}
+.card{
+  transition: all .3s;
+}
+.card:hover{
+  transform: scale(1.04);
+}
+  /* //Light box stylying */
+
+ .lightbox-container .lightbox-img-thumbnail:first-child{
+  display: block;
+    width: 60% !important;
+    height: 100% !important;
+}
+.lightbox-container .lightbox-img-thumbnail{
+    width: 17% !important;
+    height: fit-content !important;
+    display: inline-block;
+    float: left;
+    border: 1px solid #505050;
+    padding: 5px;
+    background-color: white;
+}
+.lightbox-backdrop.hide-controls div{
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+@media (min-width: 992px){
+    .product-details{
+        padding-left: 3rem;
+    }
+    .product-details.text-black{
+        border-left: 1px solid #00000040;
+    }
+    .product-details.text-light{
+        border-left: 1px solid #fcbc7365;
+    }
 }
